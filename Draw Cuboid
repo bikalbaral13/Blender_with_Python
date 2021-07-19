@@ -1,0 +1,9 @@
+import bpy
+    
+def draw_cuboid(center,length,breadth,height):
+    # center refer to actual centre of cuboid
+    cuboid=bpy.ops
+    cuboid.mesh.primitive_cube_add(location=center)
+    cuboid.transform.resize(value=(length/2, breadth/2, height/2))
+    
+draw_cuboid([0,0,0],2,2,2)
