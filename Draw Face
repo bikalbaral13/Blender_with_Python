@@ -1,3 +1,4 @@
+import bpy
 
 def draw_face(center,length,breadth):
     p1=(center[0]-length/2,center[1]-breadth/2,center[2])
@@ -10,3 +11,5 @@ def draw_face(center,length,breadth):
     object=bpy.data.objects.new("Plane",mesh)
     bpy.context.collection.objects.link(object)
     mesh.from_pydata(verts,[],faces)
+    
+draw_face([0,0,0],6,7)
