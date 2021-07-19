@@ -1,0 +1,12 @@
+
+def draw_face(center,length,breadth):
+    p1=(center[0]-length/2,center[1]-breadth/2,center[2])
+    p2=(center[0]-length/2,center[1]+breadth/2,center[2])
+    p3=(center[0]+length/2,center[1]+breadth/2,center[2])
+    p4=(center[0]+length/2,center[1]-breadth/2,center[2])
+    verts=[p1,p2,p3,p4]
+    faces=[(0,1,2,3)]
+    mesh =bpy.data.meshes.new("Plane")
+    object=bpy.data.objects.new("Plane",mesh)
+    bpy.context.collection.objects.link(object)
+    mesh.from_pydata(verts,[],faces)
