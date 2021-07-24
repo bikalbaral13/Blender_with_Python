@@ -1,10 +1,10 @@
+import bpy
+
 bl_info = {
     "name": "Cursor Array",
     "blender": (2, 80, 0),
     "category": "Object",
 }
-
-import bpy
 
 class ObjectCursorArray(bpy.types.Operator):
     """Object Cursor Array"""
