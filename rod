@@ -30,7 +30,7 @@ def draw_rod(objname, curvename, cList):
     polyline.order_u = len(polyline.points)-1
     polyline.use_endpoint_u = True
     
-    obj = bpy.data.objects['NameOfMyCurveObject.002']
+    obj = bpy.data.objects['NameOfMyCurveObject']
     obj.data.fill_mode = 'FULL'
     obj.data.bevel_depth = 0.25
     obj.data.bevel_resolution = 15    
